@@ -1,0 +1,181 @@
+/* Form wrapper styles */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Updated gradient */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Form container styles */
+.form-container {
+  max-width: 500px; /* Reduced max width for better form size */
+  width: 100%;
+  background-color: #25252b;
+  border-radius: 10px;
+  padding: 40px 20px; /* Increased padding for a more balanced look */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 14px 18px #0a0404cb; /* Added shadow for a subtle 3D effect */
+}
+
+/* Title styles */
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family:fantasy;
+  text-shadow: 2px 2px 4px rgba(48, 47, 47, 0.3);
+  background: linear-gradient(155deg, #55d7ca, #527bc2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+input{
+  color: aliceblue;
+}
+/* Input and Textarea styles */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+i{
+  margin-right: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc; /* Reduced border size */
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+  background: transparent;
+  
+  
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #2575fc; /* Updated focus color to match the gradient */
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.6); /* Updated shadow color */
+  
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Updated button gradient */
+  color: white;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #25d1da, #9a3ae9); /* Darkened hover effect */
+  transform: scale(1.05);
+}
+
+button:active::after {
+  transform: scale(4);
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Error message styles */
+.error-message {
+  color: red;
+  font-size: 16px;
+  position: absolute;
+  right: 5px;
+  /* margin-left: 5px; */
+  /* vertical-align: middle; */
+}
+
+/* Blink animation for labels */
+/* .blink-label {
+  animation: blink 1s step-start infinite;
+  color: red;
+} */
+
+/* Blink keyframes */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Input group positioning */
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+  
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  color: aliceblue;
+}
+label{
+  color: aliceblue;
+  font-size: larger;
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form-container {
+      padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
+      font-size: 14px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+}
