@@ -23,7 +23,7 @@ function LoginPage() {  // Capitalized 'P' in LoginPage
                     <input type="password" placeholder="Password" />  {/* Self-closing tag */}
                     <input type="submit" value="Sign in" onClick={handleLoginClick} />  {/* Self-closing tag */}
                     <div className="group">  {/* 'class' changed to 'className' */}
-                        <a href="#">Forgot Password</a>
+                        <a href="javascript:void(0);">Forgot Password</a>
                         <a href="feedbackform.js">Sign up</a>
                     </div>
                 </div>
