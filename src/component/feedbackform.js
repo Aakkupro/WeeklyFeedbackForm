@@ -131,7 +131,7 @@ function MentorMenteeForm() {
     const { name, value } = e.target;
 
     let errorMsg = '';
-    const textRegex = /^[A-Za-z\s,\.]*$/;
+    const textRegex = /^[A-Za-z\s,.]*$/;
 
     if (name !== 'mentee_email' && value && !textRegex.test(value)) {
       errorMsg = 'Enter only string/text';
